@@ -1,9 +1,8 @@
 <template>
-  <matrixCanvas text="sammiee5311"/>
+  <router-view />
 </template>
 
 <script setup lang="ts">
-import matrixCanvas from "./components/Matrix.vue";
 </script>
 
 <style>

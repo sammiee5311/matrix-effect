@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import MatrixEffect from  "../matrixEffect"
+import MatrixEffect from  "../utils/matrixEffect"
 
 const matrixCanvas = ref<HTMLCanvasElement>(null!);
 

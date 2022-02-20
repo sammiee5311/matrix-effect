@@ -1,4 +1,4 @@
-import MatrixSymbol from "./matrixSymbol";
+import MatrixSymbol from "../utils/matrixSymbol";
 
 class MatrixEffect {
   fontSize: number;
