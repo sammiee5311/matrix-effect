@@ -12,11 +12,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { router } from "../routers";
+import { defaultCharacters } from "../utils/data"
 
 const text = ref("");
 
 const onClicked = () => {
-    router.push({ path: '/matrix', query: { text: text.value ? text.value : "matrix" } })
+    router.push({ path: '/matrix', query: { text: text.value ? text.value : defaultCharacters } })
 }
 
 </script>
@@ -38,7 +39,7 @@ const onClicked = () => {
 .home-input, .home-button {
     text-align: center;
     color: aliceblue;
-    margin: 3px
+    margin: 3px;
 }
 
 .home-input input {
@@ -50,9 +51,12 @@ const onClicked = () => {
 .home-button button {
     width: 5rem;
     height: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 .home-button button:hover {
-    background: #39a739a7;
+    background: #9cc79ca7;
 }
 </style>
