@@ -1,10 +1,12 @@
 <template>
-<div id="home-wrapper">
-    <div class="home-input">
-        <input v-model="text" type="text" @keyup.enter="onClicked"/>
-    </div>
-    <div class="home-button">
-        <button @click="onClicked">Enter</button>
+<div class="wrapper">
+    <div class="content">
+        <div class="home-input">
+            <input v-model="text" type="text" @keyup.enter="onClicked"/>
+        </div>
+        <div class="home-button">
+            <button @click="onClicked">Enter</button>
+        </div>
     </div>
 </div>
 </template>
@@ -23,18 +25,11 @@ const onClicked = () => {
 </script>
 
 <style scoped>
-#home-wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
-    height: 250px;
-    margin-left: -220px;
-    margin-top : -170px;
+.wrapper {
     display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .home-input, .home-button {
     text-align: center;
@@ -44,8 +39,9 @@ const onClicked = () => {
 
 .home-input input {
     font-size: 20px;
-    width: 30rem;
+    width: 15rem;
     height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .home-button button {

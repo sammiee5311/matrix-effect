@@ -8,7 +8,7 @@ import MatrixEffect from  "../utils/matrixEffect"
 
 const matrixCanvas = ref<HTMLCanvasElement>(null!);
 
-const FPS = 40;
+const FPS = 20;
 const NEXT_FRAME = 1000 / FPS;
 
 let lastTime = 0;
@@ -39,7 +39,7 @@ onMounted(() => {
     const deltaTime = timestamp - lastTime;
     lastTime = timestamp;
     if (timer > NEXT_FRAME) {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
       ctx.textAlign = "center";
       ctx.fillRect(0, 0, matrixCanvas.value!.width, matrixCanvas.value!.height);
       ctx.fillStyle = gradient;

@@ -8,6 +8,6 @@ simple matrix effect with vite, typescript, and vue3
 
 [matrix-effect](https://matrix-effect-vue3.netlify.app)
 
-# reference
+## reference
 
 - [youtube](https://www.youtube.com/watch?v=f5ZswIE_SgY)
