@@ -14,12 +14,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { router } from "../routers";
-import { defaultCharacters } from "../utils/data"
 
 const text = ref("");
 
 const onClicked = () => {
-    router.push({ path: '/matrix', query: { text: text.value ? text.value : defaultCharacters } })
+    if (text.value !== '') {
+        router.push({ path: '/matrix', query: { text: text.value } })
+    } else {
+        router.push({ path: '/matrix'})
+    }
 }
 
 </script>

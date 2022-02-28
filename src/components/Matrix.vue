@@ -55,11 +55,11 @@ onMounted(() => {
   }
   animate(0);
 
-  window.addEventListener("resize", resizeWindow)
+  window.addEventListener("resize", resizeWindow);
 })
 
 onUnmounted(() => { 
-    window.removeEventListener('resize', resizeWindow); 
+  window.removeEventListener('resize', resizeWindow); 
 })
 </script>
 
